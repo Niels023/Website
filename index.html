@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio website</title>
+  <title>Mijn portfolio website</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     
 </head>
@@ -26,7 +25,7 @@
   <br><br><br><br>
   <h3>Mijn kwalificaties en werk ervaringen</h3>
   <br>
-  <h6>Ik heb een VMBO-TL diploma en een Cambridge engels diploma. Ik heb stage gelopen bij de gemeente Haarlem</h6>
+  <h6>Ik heb een VMBO-TL diploma en een Cambridge engels diploma. Ik heb stage gelopen bij de gemeente Haarlem.</h6>
 
   <br><br><br><br>
   <h3>Contact</h3>
@@ -35,9 +34,43 @@
   
 </div>
 
-<a href="https://github.com/Niels023/Website" target="_blank">
-<button type="button" class="btn btn-secondary position-fixed bottom-0 start-0 m-3">source code (github repo)</button>
-</a>
+<div class="position-fixed bottom-0 start-0 m-3 d-flex gap-2">
+
+  <a href=" https://github.com/Niels023/Website" target="_blank">
+
+    <button type="button" class="btn btn-secondary">
+      Source code (GitHub repo)
+    </button>
+
+  </a>
+
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cvModal">
+    CV Download
+  </button>
+
+</div>
+
+<div class="modal fade" id="cvModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+
+        <h5>Kies je CV</h5>
+        <button type="button" class="btn-close btn-close-white"   data-bs-dismiss="modal"></button>
+
+      </div>
+      <div class="modal-body d-flex flex-column gap-3">
+
+        <a href="assets/cv english 2025.docx" download class="btn btn-outline-primary">Download engels CV</a>
+        <a href="assets/cv dutch 2025.docx" download class="btn btn-outline-primary">Download nederlands CV</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
